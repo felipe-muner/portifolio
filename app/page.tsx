@@ -10,7 +10,6 @@ export default async function Home() {
   //@TODO: implement to have line 20 and 21 available
   // const { page, auth } = await getDictionary(lang)
   const session = await getServerSession(authOptions);
-  console.log('session', session);
   
   const user = session?.user;
 
