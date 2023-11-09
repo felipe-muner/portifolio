@@ -3,7 +3,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 
 interface AuthButtonProps {
-  auth?: {
+  auth: {
     signin: string;
     signout: string;
   };
