@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./providers";
 import { Locale, i18n } from "@/i18n.config";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,7 @@ export default function RootLayout({
           <main>{children}</main>
 
           {/* Footer */}
-          <footer></footer>
+          <Footer />
         </Providers>
       </body>
     </html>
