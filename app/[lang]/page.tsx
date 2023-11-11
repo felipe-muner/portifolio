@@ -5,6 +5,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/_options";
 
 import AuthButton from "@/components/auth-button";
+import { Button } from '@/components/ui/button';
 
 export default async function Home({
   params: { lang }
@@ -30,6 +31,7 @@ export default async function Home({
             -&gt;
           </span>
           <AuthButton auth={auth} />
+          <Button className="mt-4">Button</Button>
         </div>
       </div>
     </section>
