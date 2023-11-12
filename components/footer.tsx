@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="flex flex-col items-center space-y-6">
         <Image
           alt="Company Logo"
-          src="/placeholder.svg"
+          src="/images/logo.svg"
           style={{
             aspectRatio: "200/100",
             objectFit: "cover",
@@ -128,7 +128,7 @@ export default function Footer() {
       </div>
       <div className="col-span-4 text-center mt-6">
         <p className="text-sm">
-          © {new Date().getFullYear() ?? 2023} FelipeMuner, Inc. All rights
+          © {new Date().getFullYear() ?? 2023} Felipe Muner, Inc. All rights
           reserved.
         </p>
       </div>
