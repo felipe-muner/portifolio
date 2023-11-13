@@ -12,7 +12,7 @@ export default async function Header({ lang }: { lang: Locale }) {
     <header className="py-6">
       <section
         key="1"
-        className="fixed top-0 w-full h-16 bg- flex items-center px-6 sm:flex-row flex-col"
+        className="fixed top-0 w-full h-16 flex items-center px-6 sm:flex-row flex-col bg-brand-green-500"
       >
         <div className="flex items-center">
           <Image

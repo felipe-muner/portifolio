@@ -1,5 +1,28 @@
 import type { Config } from "tailwindcss";
 
+const brandColors = {
+  "brand-gray": {
+    100: "#343a40",
+    200: "#495057",
+    300: "#6c757d",
+    400: "#adb5bd",
+  },
+  "brand-green": {
+    100: "#32a852",
+    200: "#52c569",
+    300: "#75d27f",
+    400: "#9fdf96",
+    500: "#4caf50",
+  },
+  "brand-accent": {
+    100: "#28673c",
+    200: "#b4c8b4",
+  },
+  "brand-yellow": {
+    100: "#FFEB3B",
+  },
+};
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,6 +40,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        ...brandColors,
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
