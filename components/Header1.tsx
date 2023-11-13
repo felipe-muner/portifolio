@@ -1,7 +1,7 @@
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/i18n.config";
-import ThemeButton from "./theme-button";
-import LocaleSwitcher from "./locale-switcher";
+import ThemeButton from "./ThemeButton";
+import LocaleSwitcher from "./LocaleSwitcher";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -50,13 +50,13 @@ export default async function Header({ lang }: { lang: Locale }) {
         </Button>
         <div className="flex-grow sm:flex sm:items-center sm:space-x-4 justify-end">
           <nav className="hidden sm:flex space-x-4 items-center">
-            <Link className="text-white transition-colors" href="#">
+            <Link className="dark:text-white transition-colors" href="#">
               Home
             </Link>
-            <Link className="text-white transition-colors" href="#">
+            <Link className="dark:text-white transition-colors" href="#">
               About
             </Link>
-            <Link className="text-white transition-colors" href="#">
+            <Link className="dark:text-white transition-colors" href="#">
               Contact
             </Link>
             <LocaleSwitcher />
