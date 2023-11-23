@@ -56,6 +56,9 @@ export default async function Header({ lang }: { lang: Locale }) {
             <Link className="dark:text-white transition-colors" href="#">
               About
             </Link>
+            <Link className="dark:text-white transition-colors" href="/faq">
+              FAQ
+            </Link>
             <Link className="dark:text-white transition-colors" href="#">
               Contact
             </Link>
