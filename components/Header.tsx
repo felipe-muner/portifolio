@@ -50,7 +50,7 @@ export default async function Header({ lang }: { lang: Locale }) {
         </Button>
         <div className="flex-grow sm:flex sm:items-center sm:space-x-4 justify-end">
           <nav className="hidden sm:flex space-x-4 items-center">
-            <Link className="dark:text-white transition-colors" href="#">
+            <Link className="dark:text-white transition-colors" href="/">
               Home
             </Link>
             <Link className="dark:text-white transition-colors" href="/about">
@@ -59,7 +59,7 @@ export default async function Header({ lang }: { lang: Locale }) {
             <Link className="dark:text-white transition-colors" href="/faq">
               FAQ
             </Link>
-            <Link className="dark:text-white transition-colors" href="#">
+            <Link className="dark:text-white transition-colors" href="/contact">
               Contact
             </Link>
             <LocaleSwitcher />

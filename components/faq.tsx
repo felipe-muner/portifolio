@@ -13,7 +13,6 @@ import TechCard from "./tech-card/TechCard";
 export default function Faq() {
   return (
     <section className="container mx-auto p-6 py-24">
-      <TechCard />
       <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
       <div className="space-y-4">
         <Collapsible className="border rounded-md">

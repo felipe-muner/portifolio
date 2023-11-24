@@ -5,6 +5,7 @@ import Providers from "./providers";
 import { Locale, i18n } from "@/i18n.config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light" style={{ colorScheme: "light" }}>
       <body className={`${inter.className} min-h-screen`}>
+        <NextTopLoader color="white" height={4} />
         <Providers>
           {/* Header */}
           <Header lang={params.lang} />
